@@ -1,0 +1,23 @@
+[
+    { "id": 1, "name": "John Doe", "age": 17, "totalMarks": 450, "grade": "A" },
+    { "id": 2, "name": "Jane Doe", "age": 18, "totalMarks": 400, "grade": "B" },
+    { "id": 3, "name": "Alice Smith", "age": 17, "totalMarks": 320, "grade": "C" },
+    { "id": 4, "name": "Bob Johnson", "age": 18, "totalMarks": 450, "grade": "A" },
+    { "id": 5, "name": "Charlie Brown", "age": 17, "totalMarks": 380, "grade": "B" },
+    { "id": 6, "name": "Emily Davis", "age": 18, "totalMarks": 460, "grade": "A" },
+    { "id": 7, "name": "David Garcia", "age": 17, "totalMarks": 400, "grade": "B" },
+    { "id": 8, "name": "Olivia Martinez", "age": 18, "totalMarks": 310, "grade": "C" },
+    { "id": 9, "name": "Sophia Lee", "age": 17, "totalMarks": 390, "grade": "B" },
+    { "id": 10, "name": "Lucas Thompson", "age": 18, "totalMarks": 450, "grade": "A" },
+    { "id": 11, "name": "Mia Clark", "age": 17, "totalMarks": 380, "grade": "B" },
+    { "id": 12, "name": "Ethan Rodriguez", "age": 18, "totalMarks": 460, "grade": "A" },
+    { "id": 13, "name": "Noah Green", "age": 17, "totalMarks": 320, "grade": "C" },
+    { "id": 14, "name": "Ava Adams", "age": 18, "totalMarks": 450, "grade": "A" },
+    { "id": 15, "name": "Liam Johnson", "age": 17, "totalMarks": 380, "grade": "B" },
+    { "id": 16, "name": "Oliver Wilson", "age": 18, "totalMarks": 460, "grade": "A" },
+    { "id": 17, "name": "Elijah Moore", "age": 17, "totalMarks": 390, "grade": "B" },
+    { "id": 18, "name": "Charlotte Taylor", "age": 18, "totalMarks": 450, "grade": "A" },
+    { "id": 19, "name": "Amelia Anderson", "age": 17, "totalMarks": 380, "grade": "B" },
+    { "id": 20, "name": "Henry Jackson", "age": 18, "totalMarks": 460, "grade": "A" }
+]
+  

@@ -1,0 +1,158 @@
+/* Styling for the overall container */
+.student-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f7fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the title */
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Styling for the filter container */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Styling for filter input and select */
+.filter-input, .filter-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    transition: 0.3s ease-in-out;
+}
+
+.filter-input:focus, .filter-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for the filter button */
+.filter-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the student grid */
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Styling for individual student cards */
+.student-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for student card text */
+.student-card h2 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.student-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Styling for the pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.page-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+.page-button-numeric {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #cccccc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+.page-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    display: none;
+}
+
+.page-button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+.page-button-numeric.active {
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .filter-input, .filter-select, .filter-button {
+        width: 100%;
+    }
+
+    .student-card h2 {
+        font-size: 1.3em;
+    }
+
+    .student-card p {
+        font-size: 1em;
+    }
+}
