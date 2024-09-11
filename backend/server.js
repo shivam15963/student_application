@@ -10,7 +10,7 @@ const port = 3001;
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root', // Your MySQL username
-    password: 'root', // Your MySQL password
+    password: '', // Your MySQL password
     database: 'studentsdb' // Your database name
 });
 
@@ -29,18 +29,6 @@ const runSQLFile = (filePath, callback) => {
         if (callback) callback();
     });
 };
-
-// Connect to MySQL and ensure the database and table exist
-db.connect((err) => {
-    if (err) {
-        console.error('Error connecting to MySQL:', err);
-        process.exit(1);
-    }
-    console.log('Connected to MySQL');
-
-    // Initialize database if needed
-    runSQLFile('init.sql'); // Run SQL file to create database and table
-});
 
 // Load students from JSON file
 const loadStudentsFromJSON = () => {
