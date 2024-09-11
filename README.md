@@ -1,5 +1,6 @@
 # Student Application
 
+Kinara Capital SDE Assignment
 A web application for managing and displaying student data. The application includes a React frontend and an Express backend with support for multiple data sources including JSON, CSV, and MySQL.
 
 ## Features
