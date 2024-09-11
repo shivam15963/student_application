@@ -56,13 +56,15 @@ A web application for managing and displaying student data. The application incl
    - Set up your MySQL database:
 
      - Make sure MySQL is running.
-     - Create a database named `studentsdb` (or adjust the configuration accordingly).
-     - Run the SQL script to set up the schema and sample data:
+     - Create a database named `studentsdb` and setup the schema and sample data by executing `setup_db.sql` and `insert_data.sql` files.
+       
+   - Start the server:
 
        ```bash
        node server.js
        ```
-
+   - The server should now be running on `http://localhost:3001`
+     
 3. **Setup Frontend:**
 
    - Navigate to the `frontend` directory:
