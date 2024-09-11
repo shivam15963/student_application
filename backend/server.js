@@ -10,25 +10,12 @@ const port = 3001;
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root', // Your MySQL username
-    password: '', // Your MySQL password
+    password: 'root', // Your MySQL password
     database: 'studentsdb' // Your database name
 });
 
 // Middleware
 app.use(cors());
-
-// Function to run SQL file for database initialization
-const runSQLFile = (filePath, callback) => {
-    const sql = fs.readFileSync(filePath, 'utf8');
-    db.query(sql, (err) => {
-        if (err) {
-            console.error('Error running SQL file:', err);
-        } else {
-            console.log(`SQL file ${filePath} executed successfully`);
-        }
-        if (callback) callback();
-    });
-};
 
 // Load students from JSON file
 const loadStudentsFromJSON = () => {
